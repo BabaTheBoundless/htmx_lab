@@ -39,13 +39,13 @@ td {
     color: white;
     font-size: 30px;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 table {
     width: 70%;
     height: 300px;
-    background-color: grey;
+    background-color: rgb(111, 149, 252);
     text-align: end;
 }
 
@@ -53,6 +53,15 @@ table {
     color: grey;
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.calendar-container {
+    display: flex;
+    align-items: flex-start;
+}
 /* NOT WORKING RIGHT NOW */
 
 
