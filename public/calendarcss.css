@@ -18,6 +18,8 @@ h1 {
 
 table {
     margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 th {
@@ -25,6 +27,7 @@ th {
     padding: 5px;
     text-align: center;
     color: orange;
+    border-radius: 20px;
  
     background-color: black;
 }
@@ -35,6 +38,7 @@ td {
     text-align: center;
     color: white;
     font-size: 30px;
+    border-radius: 10px;
     background-color: black;
 }
 
@@ -50,10 +54,7 @@ table {
 }
 
 /* NOT WORKING RIGHT NOW */
-.rounded {
-    border-radius: 10px;
-    overflow: hidden;
-}
+
 
 /* --------------- Link between html files --------------- */
 
