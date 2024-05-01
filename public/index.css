@@ -1,0 +1,11 @@
+h1 {
+    font-family: 'Quicksand', sans-serif ;
+}
+
+
+.quicksand-bold {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20;
+  font-style: normal;
+}
