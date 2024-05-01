@@ -4,6 +4,14 @@
     font-style: normal;
   }
 
+
+  .calendar-container {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    max-height: 300x;
+  }
   
 h1 {
     text-align: center;
@@ -44,9 +52,13 @@ td {
 
 table {
     width: 70%;
-    height: 300px;
+    height: 200px;
     background-color: rgb(111, 149, 252);
     text-align: end;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 
@@ -58,10 +70,8 @@ table {
 .dark-mode {
     background-color: black;
     color: white;
-    margin-right: 10px;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
+    
+
     
     
 }
@@ -70,14 +80,16 @@ button {
     text-align: center;
     align-items: center;
     justify-content: center;
-   
+    margin: 0 auto;
+    display: block;
+    margin-top: 1px;
+    
+    
+    
 }
 
 
-.calendar-container {
-    display: flex;
-    align-items: flex-start;
-}
+
 /* NOT WORKING RIGHT NOW */
 
 
