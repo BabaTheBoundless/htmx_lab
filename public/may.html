@@ -7,20 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org/dist/htmx.js"></script>
 </head>
  
 <body>
 
     <h1>
-        <a href="april.html" class="arrow-link">&larr;</a>
+        <a href="april.html" class="arrow-link" hx-get="june.html" hx-trigger="click">&larr;</a>
         May 2024
         <a href="june.html" class="arrow-link">&rarr;</a>
     </h1>
+    <button class="dark-mode" onClick ="toggleDarkMode()">Dark mode</button>
+    <script src="myjs.js"></script>
+    
     <br />
     
  
-    <div class ="rounded">
+    <div class ="calendar-container">
       <table cellspacing="5">
           <thead>
               <tr>
@@ -83,7 +86,7 @@
                   <td>29</td>
                   <td>30</td>
                   <td>31</td>
-                  <td>1</td>
+                  <td class="wrongmonth">1</td>
               </tr>
               <tr>
                   
@@ -97,9 +100,9 @@
               </tr>
           </tbody>
       </table>
-      <button class="dark-mode" onClick ="toggleDarkMode()">Dark mode</button>
-      <script src="myjs.js"></script>
+
   </div>
+  
 </body>
  
 </html>
