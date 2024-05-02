@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/htmx.org/dist/htmx.js"></script>
 
 
@@ -17,12 +18,13 @@
     <h1>
         <a href="march.html" class="arrow-link">&larr;</a>
         April 2024
-        <a href="index.html" class="arrow-link">&rarr;</a>
+        <a href="may.html" class="arrow-link" hx-get="/may.html" hx-trigger="click">&rarr;</a>
     </h1>
-    <button class="dark-mode" onClick ="toggleDarkMode()">Dark mode</button>
+    <button class="dark-mode" onClick="toggleDarkMode()" >Dark mode</button>
     <script src="myjs.js"></script>
     <br />
     
+    <div id="calendar-container" hx-get="/api/openweather?city=Missoula" hx-trigger="load">
  
     <div class="calendar-container">
       <table cellspacing="5">
@@ -99,6 +101,7 @@
           </tbody>
       </table>
 
+    </div>
     </div>
  
 </body>
