@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('/api/openweather?city=Missoula')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OPENWEATHER_API_KEY}')
         .then(response => response.json())
         .then(weatherData => {
             const temperature = weatherData.main.temp;

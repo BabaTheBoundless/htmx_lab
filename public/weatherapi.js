@@ -15,7 +15,7 @@ import('node-fetch').then(({ default: fetch }) => {
             
             res.json(weatherData);
         } catch (error) {
-            console.error('Error fetching the weather data:', error);
+            console.error('FETCH ERROR!: ', error);
             res.status(500).send('Error fetching the weather data');
         }
     });
