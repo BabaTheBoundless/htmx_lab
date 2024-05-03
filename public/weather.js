@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(weatherData => {
             
-            const temperature = weatherData.main.temp;
+            const kelvinTemperature = weatherData.main.temp;
+            const FahTemperature = (kelvinTemperature - 273.15) * 9/5 + 32;
+            const temperature = FahTemperature.toFixed(0);
             const description = weatherData.weather[0].description;
             const weatherContainer = document.getElementById('weather-container');
             weatherContainer.innerHTML = 
