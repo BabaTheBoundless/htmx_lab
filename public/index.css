@@ -25,8 +25,28 @@ body {
 }
 
 
+button {
+  font-family: "Sedan SC", serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 
 
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.sedan-sc-regular {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 .quicksand-bold {
@@ -60,6 +80,7 @@ li { /* 12 months */
 
 p { /* "Temperature" & "Description" */
   text-align: center;
+  font-family: "Ubuntu", sans-serif;
 }
 
 a {
