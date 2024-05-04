@@ -35,15 +35,41 @@ table {
 }
 
 
+
+
+/* ------ th ------ */
+
 th {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+    color: rgb(102, 0, 255);
+    border-radius: 20px;
+ 
+    background-color: rgb(255, 255, 255);
+}
+
+.light-mode th {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+    color: rgb(102, 0, 255);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dark-mode th {
     border: 1px solid black;
     padding: 5px;
     text-align: center;
     color: orange;
     border-radius: 20px;
- 
     background-color: black;
 }
+
+
+/* ------ td ------ */
+
 
 td {
     border: 1px solid rgb(255, 255, 255);
@@ -79,7 +105,6 @@ td {
 
 
 
-
 table {
     width: 70%;
     height: 200px;
@@ -93,16 +118,10 @@ table {
 
 
 .wrongmonth {
-    color: rgb(110, 110, 110) !important;
+    color: rgb(142, 142, 142) !important;
 }
 
-.wrongmonth-light {
-    color: rgb(75, 75, 75) !important;
-}
 
-.wrongmonth-dark {
-    color: grey !important;
-}
 
 
 

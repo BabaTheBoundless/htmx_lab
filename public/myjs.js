@@ -4,6 +4,7 @@ function toggleDarkMode() {
     if (darkMode) {
         element.classList.remove("dark-mode");
         element.classList.add("light-mode");
+
     }
     else {
     element.classList.add("dark-mode");
