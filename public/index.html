@@ -36,8 +36,16 @@
     <div id="weather-container">
         <p>Weather Data Loading.....</p>
     </div>
-  
+ 
+   
+    <button hx-get="background.js" hx-trigger="click">change background</button>
+    <button onclick="background()">Change Background</button>
+
+
     <script src="myjs.js"></script>
-    <script src="weather.js"></script>
+    <!-- <script src="weather.js"></script> -->
+    <script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
+    <script src="background.js"></script>
+
 </body>
 </html>
