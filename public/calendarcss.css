@@ -20,6 +20,13 @@ h1 {
     font-family: 'Jersey 20';
 }
 
+body {
+    background-image: url('pictures/background.jpg');
+    background-color: rgba(0, 0, 0, 0.3); 
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
 
 table {
     margin: auto;

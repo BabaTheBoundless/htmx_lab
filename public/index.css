@@ -13,8 +13,15 @@ body {
   background-color: rgba(0, 0, 0, 0.3); 
   background-blend-mode: overlay;
   background-size: cover;
- 
-  
+}
+
+#weather-container {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #9cf5ff; 
+  border-radius: 10px; 
+  padding: 20px; 
+  width: 200px; 
 }
 
 
