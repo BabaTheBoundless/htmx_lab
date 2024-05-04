@@ -45,26 +45,14 @@ th {
     background-color: black;
 }
 
-td {
-    border: 1px solid rgb(255, 255, 255);
-    padding: 35px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-}
-
-
-
 .light-mode td {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 0, 0);
     padding: 35px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(252, 0, 0);
     font-size: 30px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(248, 0, 0);
 }
 
 .dark-mode td {
@@ -93,24 +81,18 @@ table {
 
 
 .wrongmonth {
-    color: rgb(110, 110, 110) !important;
-}
-
-.wrongmonth-light {
-    color: rgb(75, 75, 75) !important;
-}
-
-.wrongmonth-dark {
-    color: grey !important;
+    color: grey;
 }
 
 
-
-/* .dark-mode {
+.dark-mode {
     background-color: black;
     color: white;
+    
 
-} */
+    
+    
+}
 
 button {
     text-align: center;
