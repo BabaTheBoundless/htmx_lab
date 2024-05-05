@@ -1,6 +1,19 @@
 h1 { /* "Calendar App" */
     font-family: 'Quicksand', sans-serif ;
     text-align: center;
+    color: black;
+}
+
+.light-mode h1 { /* "Calendar App" */
+  font-family: 'Quicksand', sans-serif ;
+  text-align: center;
+  color: black;
+}
+
+.dark-mode h1 { /* "Calendar App" */
+  font-family: 'Quicksand', sans-serif ;
+  text-align: center;
+  color: white;
 }
 
 h2 { /* "Weather" */
@@ -19,6 +32,27 @@ body {
   text-align: center;
   margin: 0 auto;
   background-color: #9cf5ff; 
+  color: black;
+  border-radius: 10px; 
+  padding: 20px; 
+  width: 200px; 
+}
+
+.light-mode #weather-container {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #9cf5ff; 
+  color: black;
+  border-radius: 10px; 
+  padding: 20px; 
+  width: 200px; 
+}
+
+.dark-mode #weather-container {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #000b4f; 
+  color: white;
   border-radius: 10px; 
   padding: 20px; 
   width: 200px; 
@@ -32,9 +66,34 @@ button {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-
-
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
+
+.light-mode button {
+  font-family: "Sedan SC", serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.dark-mode button {
+  font-family: "Sedan SC", serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #000000;
+  color: rgb(255, 255, 255)
+}
+
+
+
 
 .ubuntu-medium {
   font-family: "Ubuntu", sans-serif;
@@ -70,18 +129,36 @@ ul { /* 12 months; no bullet points*/
 
 }
 
+
+
 li { /* 12 months */
   font-family: "Alegreya", serif;
   text-align: center;
   font-size: 30px;
-
-  
 }
+
+.light-mode li { /* 12 months */
+  font-family: "Alegreya", serif;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+.dark-mode li {
+  font-family: "Alegreya", serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+
 
 p { /* "Temperature" & "Description" */
   text-align: center;
   font-family: "Ubuntu", sans-serif;
 }
+
+
 
 a {
   color: black;

@@ -44,53 +44,13 @@
     </div>
 
  
-    <button hx-trigger="click" onclick="background()">Blue Mode</button>
-    <!-- <button hx-get="background.js" hx-trigger="click" hx-target="#background-script">change background</button>
-    <div id="background-script" hx-swap="outerHTML"></div> -->
-     <!-- <button onclick="background()">Change Background</button> -->
-
-
-    
+    <button hx-trigger="click" onclick="background()">Dark Mode</button>
     <script src="myjs.js"></script>
-    <!-- <script src="weather.js"></script> -->
-    
-    <script src="background.js"></script>
-
+    <script src="weather.js"></script>
 
     <script> //button doesn't work unless i use js inside html
-
     var backgroundChanged = false;
-    /* function background() {
-        if (!backgroundChanged) {
-            var randomColor;
-            var blueTint = Math.floor(Math.random() * 156) + 100;
-            randomColor = 'rgba(0, 0, ' + 194+ ', 0.5)';
-            document.body.style.backgroundColor = randomColor;
-            backgroundChanged = true;
-        }
-    else {
-        document.body.style.backgroundColor = '';
-        backgroundChanged = false;
-    }
-    } */ 
-    
     function background() {
-        /*if (!backgroundChanged) {
-            
-            var currentColor = getComputedStyle(document.body).backgroundColor;
-            console.log(currentColor);
-            
-            var darkTint = .7;
-            var rgbValues = currentColor.match(/\d+/g);
-            darkMode = 'rgba(30, 30, 30, ' + .9 + ')';
-            document.body.style.backgroundColor = darkMode;
-            backgroundChanged = true;
-
-        }
-        else {
-            document.body.style.backgroundColor = '';
-            backgroundChanged = false;
-        }*/
         if (!backgroundChanged) {
             var newImage = new Image();
 
@@ -109,6 +69,18 @@
             document.body.style.backgroundColor = '';
             backgroundChanged = false;
             }
+        //dark mode for fonts
+        var element = document.body;
+        var darkMode = element.classList.contains("dark-mode");
+        if (darkMode) {
+            element.classList.remove("dark-mode");
+            element.classList.add("light-mode");
+
+        }
+        else {
+        element.classList.add("dark-mode");
+        element.classList.remove("light-mode");
+    }
         }
     
     </script>

@@ -120,7 +120,15 @@ table {
 
 
 .wrongmonth {
-    color: rgb(142, 142, 142) !important;
+    color: rgb(139, 139, 139) !important;
+}
+
+.light-mode .wrongmonth {
+    
+}
+
+.dark-mode .wrongmonth {
+    color: rgb(125, 125, 125) !important;
 }
 
 
