@@ -52,7 +52,7 @@
 
     
     <script src="myjs.js"></script>
-    <script src="weather.js"></script>
+    <!-- <script src="weather.js"></script> -->
     
     <script src="background.js"></script>
 
@@ -60,7 +60,7 @@
     <script> //button doesn't work unless i use js inside html
 
     var backgroundChanged = false;
-    function background() {
+    /* function background() {
         if (!backgroundChanged) {
             var randomColor;
             var blueTint = Math.floor(Math.random() * 156) + 100;
@@ -72,7 +72,45 @@
         document.body.style.backgroundColor = '';
         backgroundChanged = false;
     }
-    }
+    } */ 
+    
+    function background() {
+        /*if (!backgroundChanged) {
+            
+            var currentColor = getComputedStyle(document.body).backgroundColor;
+            console.log(currentColor);
+            
+            var darkTint = .7;
+            var rgbValues = currentColor.match(/\d+/g);
+            darkMode = 'rgba(30, 30, 30, ' + .9 + ')';
+            document.body.style.backgroundColor = darkMode;
+            backgroundChanged = true;
+
+        }
+        else {
+            document.body.style.backgroundColor = '';
+            backgroundChanged = false;
+        }*/
+        if (!backgroundChanged) {
+            var newImage = new Image();
+
+
+            newImage.src = "pictures/background_copyugg.jpg"; 
+
+            
+            document.body.style.backgroundImage = "url('" + newImage.src + "')";
+
+            darkMode = 'rgba(30, 30, 30, ' + .9 + ')';
+            document.body.style.backgroundColor = darkMode;
+            backgroundChanged = true;
+            } else {
+            
+            document.body.style.backgroundImage = ''; 
+            document.body.style.backgroundColor = '';
+            backgroundChanged = false;
+            }
+        }
+    
     </script>
 
 </body>

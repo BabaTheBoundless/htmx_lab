@@ -12,7 +12,7 @@ function background() {
 
     var blueTint = Math.floor(Math.random() * 156) + 100;
     randomColor = 'rgba(0, 0, ' + blueTint + ', 0.3)';
-    ocument.body.style.backgroundColor = randomColor;
+    document.body.style.backgroundColor = randomColor;
 
 
     /* var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); // Generate random color
