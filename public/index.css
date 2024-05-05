@@ -122,11 +122,25 @@ button {
   font-style: normal;
 }
 
-ul { /* 12 months; no bullet points*/
-  
+
+
+ul { /* 12 months; no bullet points*/ 
+  color: black;
   list-style-type: none;
   padding: 0;
+}
 
+.light-mode ul { /* 12 months; no bullet points*/ 
+  color: black !important;
+  list-style-type: none;
+  padding: 0;
+}
+
+.dark-mode ul { /* 12 months; no bullet points*/ 
+  color: white !important;
+  list-style-type: none;
+  padding: 0;
+  ;
 }
 
 
@@ -135,6 +149,7 @@ li { /* 12 months */
   font-family: "Alegreya", serif;
   text-align: center;
   font-size: 30px;
+  color: black;
 }
 
 .light-mode li { /* 12 months */
@@ -161,13 +176,9 @@ p { /* "Temperature" & "Description" */
 
 
 a {
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
-
-
-
-
 
 
 a:visited {
